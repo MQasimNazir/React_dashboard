@@ -1,0 +1,79 @@
+@keyframes fadeInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInFromBottom 0.5s ease-out;
+}
+
+
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.custom-table thead {
+  color: white;
+}
+
+.custom-table th,
+.custom-table td,
+.custom-table td .MuiBox-root p {
+  padding: 8px 12px;
+  color: #ffff;
+  font-size: 14px;
+  overflow: hidden;
+  /* Clip overflowing text */
+  text-overflow: ellipsis;
+  /* Show "..." for clipped text */
+  white-space: nowrap;
+  /* Keep text in a single line */
+
+}
+td .MuiBox-root p{
+  max-width: 100px;
+  padding-inline: 0;
+}
+
+
+
+.custom-table tbody tr:hover {
+  color: "#ffff";
+}
+
+
+@media screen and (max-width: 1366px) {
+
+  .custom-table th {
+    padding: 4px 6px;
+
+  }
+
+  .custom-table td , td .MuiBox-root p {
+    padding: 4px 6px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1024) {
+
+  .custom-table th {
+    padding: 4px 6px;
+
+  }
+
+  .custom-table td , td .MuiBox-root p {
+    padding: 2px 3px;
+    font-size: 10px;
+  }
+}
